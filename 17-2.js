@@ -1,0 +1,6 @@
+var expr=require("express")
+var app=expr()
+var path=require("path")
+sp=path.join(__dirname,"../public")
+app.use(expr.static(sp))
+app.listen(8087)
