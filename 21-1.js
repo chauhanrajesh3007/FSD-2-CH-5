@@ -5,4 +5,5 @@ var sp=path.join(__dirname,"../public")
 app.get("/",(req,res)=>{
     res.sendFile(sp+"/3.html")
 })
+app.use(expr.static("../public"))
 app.listen(9000)
